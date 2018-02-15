@@ -1,6 +1,6 @@
 Author: *Pankaj Mistry -- pankajmistryin [at] gmail.com*
 
-Emulation of Non Volatile Memory of variable bandwidth and latency, via thermal throttling. <br/>
+Emulation of Non Volatile Memory of variable bandwidth and latency, via DRAM thermal throttling. <br/>
 Custom assigned values (trained dataset) to the corresponding PCI-based registers, for a dual socket Intel Xeon Platform.
 ```
 python throttlectrl.py --help
