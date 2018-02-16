@@ -1,0 +1,116 @@
+\begin{table*}[t]
+\centering
+{\footnotesize
+	\begin{subtable}{0.31\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 35.37 s & 1 & 3 & 1 GB\\\hline
+	{\ttfamily nuclide} & 42.58 s & 0.9 & 2.7 & 30 MB \\\hline
+	{\ttfamily energy} & 102.38 s & 0.14 & 0.42 & 970 MB \\\hline
+      None & 113.17 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{XSBench (high)}
+	\label{tbl:tiering_xsbench}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.31\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.85cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 49.3 s & 1 & 3 & 1.5 GB\\\hline
+	{\ttfamily parts} & 160.1 s & 0.019 & 0.057 & 250 MB \\\hline
+	{\ttfamily zones} & 49.4 s & 0.99 & 2.97 & 1250 MB \\\hline
+      None & 162.2 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{CLOMP (high)}
+	\label{tbl:tiering_clomp}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.31\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 28.83 s & 1 & 3 & 1.6 GB\\\hline
+	{\ttfamily a} & 75.38 s & 0.4 & 1.2 & 534 MB \\\hline
+	{\ttfamily b} & 75.53 s & 0.39 & 1.17 & 534 MB \\\hline
+	{\ttfamily }c & 61.19 s & 0.59 & 1.77 & 534 MB \\\hline
+      None & 106.55 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{STREAM (high)}
+	\label{tbl:tiering_stream}
+	\end{subtable}
+}
+
+{\footnotesize
+	\begin{subtable}{0.3\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline
+	All & 29.45 s &  1 & 0 & 1 GB \\\hline 
+	{\ttfamily C4} & 29.68 s & 0.81 & 0 & 1 MB \\\hline
+	{\ttfamily sum} & 29.9 s & 0.63 & 0 & 498 MB \\\hline
+	{\ttfamily }A & 30.5 s & 0.15 & 0 & 498 MB \\\hline
+	None & 30.69 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{doitgen (none)}
+	\label{tbl:tiering_doitgen}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.3\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 116.86 s & 1 & 1 & 1.5GB \\\hline
+	{\ttfamily X} & 136.38 s & 0.62 & 0.62 & 500 MB \\\hline
+	{\ttfamily B} & 141.17 s & 0.53 & 0.53 & 500 MB \\\hline
+	{\ttfamily A} & 150.47 s & 0.34 & 0.34 & 500 MB \\\hline
+     None & 168.15 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{adi (low)}
+	\label{tbl:tiering_adi}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.3\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 56.44 s & 1 & 2 & 250 MB \\\hline
+	{\ttfamily B} & 56.98 s & 0.99 & 1.98 & 125 MB \\\hline
+	{\ttfamily A} & 130.25 s & 0.04 & 0.08 & 125 MB \\\hline
+      None & 133.05 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{trmm (medium)}
+	\label{tbl:tiering_trmm}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.33\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 49.55 s & 1 & 3 & 1.5 GB \\\hline
+	{\ttfamily hz} & 114.07 s & 0.48 & 1.44 & 500 MB \\\hline
+	{\ttfamily ey} & 127.91 s & 0.37 & 1.11 & 500 MB \\\hline
+	{\ttfamily ex} & 138.83 s & 0.29 & 0.87 & 500 MB \\\hline
+      None & 174.58 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{fdtd-2d (high)}
+	\label{tbl:tiering_fdtd}
+	\end{subtable}
+}
+{\footnotesize
+	\begin{subtable}{0.33\linewidth}
+    \begin{tabular}{|p{1cm}|p{0.8cm}|p{0.55cm}|p{0.55cm}|p{0.75cm}|} \hline
+	FastMem alloc & Time & Benefit & Co-benefit & Size \\\hline \hline	
+	All & 28.67 s & 1 & 3 & 1 GB\\\hline
+	{\ttfamily A} & 59.64 s & 0.61 & 1.83 & 500 MB \\\hline
+	{\ttfamily B} & 62.52 s & 0.58 & 1.74 & 500 MB \\\hline
+      None & 109.7 s & 0 & 0 & 0 \\\hline
+    \end{tabular}
+	\subcaption{jacobi-2d (high)}
+	\label{tbl:tiering_jacobi}
+	\end{subtable}
+}
+
+\caption{Execution time in data tiering. Application sensitivity classification in parentheses.}
+\label{tbl:tiering}
+\vspace{-1ex}
+\end{table*}

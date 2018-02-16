@@ -1,0 +1,5 @@
+,All-in-DRAM,Tiering,Collocation
+jacobi-2d,1,1, 1.5
+jacobi-2d,1,2.1,2.6
+fdtd-2d,1,1.5,2.6
+fdtd-2d,1,1.5,3.2
