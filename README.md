@@ -13,6 +13,9 @@ Needs custom modification of 1 line of code in each source code file. The line r
 ## Collocation Analysis
 For specific data tierings and NVM emulation, implemented as stated in the two previous steps, run in parallel the desired applications, multiple times. 
 
+### Experimental raw data
+In folder `data/`
+
 ### Reference
 
 For further detail and experimental result analysis refer to:
