@@ -1,5 +1,7 @@
 Author: *Pankaj Mistry -- pankajmistryin [at] gmail.com*
 
+Extended version of: https://github.com/SudarsunKannan/Thermalthrottling
+
 Emulation of Non Volatile Memory of variable bandwidth and latency, via DRAM thermal throttling. <br/>
 Custom assigned values (trained dataset) to the corresponding PCI-based registers, for a dual socket Intel Xeon Platform.
 ```
@@ -24,3 +26,6 @@ Options:
   --lspci=LSPCI       1 = show PCI ID's of throttling devices [default: 0]
 ```
 
+Paper reference:
+
+*Sudarsun Kannan, Ada Gavrilovska, and Karsten Schwan. 2016. pVM: persistent virtual memory for efficient capacity scaling and object storage. In Proceedings of the Eleventh European Conference on Computer Systems (EuroSys '16). ACM, New York, NY, USA, Article 13, 16 pages. DOI: https://doi.org/10.1145/2901318.2901325*
